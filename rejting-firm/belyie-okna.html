@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>Отзывы и контакты компании Белые окна - пластиковые окна в Туле - "Okna71.com"</title>
+  <meta name="keywords" content="отзывы контакты рейтинг белые окна пластиковые окна Тула цена профиль" />
+  <meta name="description" content="Фирма пластиковых окон в Туле - Белые окна. Рейтинги и отзывы о компании Белые окна в Туле." />
+  <base href="" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <script type='text/javascript' src='../assets/templates/okn/scripts/jquery-1.7.2.min.js'></script>
+<script type="text/javascript">
+$(document).ready(function () {
+
+				//main_slider
+				var current = 7;
+				var count = $('#foo2 > li').size(); 
+
+				if (current<= 7){
+				$(".prev_1").css('background', 'url(../images/arrow_left.png) no-repeat').prop('disabled', true);//если слайд меньше единицы левая кнопка скрываеться
+
+				};
+				if (current < count){
+				$(".next_1").css('background', 'url(../images/arrow_right1.png) no-repeat').prop('disabled', false);//правая ннопка работает за исключением...
+				};
+				if (current >= count){
+				$(".next_1").css('background', 'url(../images/arrow_right.png) no-repeat').prop('disabled', true);//когда она на последнем слайде
+				};
+
+				$(".next_1").click(function() {
+				current++;
+				$("#slider_main").animate({"left": "-=134px"}, 400);
+				if (current >= count) {
+				$(".next_1").css('background', 'url(../images/arrow_right.png) no-repeat').prop('disabled', true);
+				};
+				if (current < count){
+				$(".next_1").css('background', 'url(../images/arrow_right1.png) no-repeat').prop('disabled', false);;
+				};
+				if (current > 7){
+				$(".prev_1").css('background', 'url(../images/arrow_left1.png) no-repeat').prop('disabled', false);;//если слайд меньше единицы левая кнопка скрываеться
+				};
+				});
+
+				$(".prev_1").click(function() {
+				current--;
+				$("#slider_main").animate({"left": "+=134px"}, 400);
+				if (current <=7) {
+				$(".prev_1").css('background', 'url(../images/arrow_left.png) no-repeat').prop('disabled', true);
+				};
+				if (current >= 7){
+				$(".next_1").css('background', 'url(../images/arrow_right1.png) no-repeat').prop('disabled', false);;//если слайд меньше единицы левая кнопка скрываеться
+				};
+				});
+});				
+</script>
+
+ <script type="text/javascript" src="../assets/templates/okn/scripts/sisyphus.js"></script>
+<script type="text/javascript" src="../assets/templates/okn/scripts/jquery.scrollTo.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+					//min_in_input_phone
+				$("input[id='quip-comment-phone-qcom']").keyup(function countRemainingChars(){
+				var number = $(this).val().length;
+			if(number > 6) {
+				$(".small_error_1").fadeOut(300);
+					}
+					else{
+				$(".small_error_1").fadeIn(300);
+					}
+				});
+
+				//min_in_input_text
+				$("textarea[id='quip-comment-box-qcom']").keyup(function countRemainingChars(){
+				var number = $("textarea[id='quip-comment-box-qcom']").val().length;
+			if(number > 20) {
+				$(".small_error_2").fadeOut(300);
+					}
+					else{
+				$(".small_error_2").fadeIn(300);
+					}
+				});
+
+			//message
+			$("#rating form input").click(function(){
+			$("#message").animate({ top: "20px" }, 300 );
+			$("#message").animate({ top: "17px" }, 100 );
+			$("#message").animate({ top: "20px" }, 50 );
+			});
+
+			//validate_form
+			if (window.location.href.indexOf("quip-comment-preview-box-qcom") > -1)
+        	{		
+											 var form = $(".quip-fld").find(".error").text().length;
+					 					if(form > 50) {
+											$("#validate_form").css("display" , "none");
+												}
+												else{
+												$("#validate_form").css("display" , "block");
+													};
+        	}
+
+			//scroll
+			if (window.location.href.indexOf("quip_approved") > -1)
+        	{		
+											$("#validate_form").css("display" , "none");
+								if ( $(".stars ul li").hasClass("no_active") ) {
+									$("#had_vote").fadeIn(2500);
+				};
+												$(".label_comm").fadeIn(2500);
+												$.scrollTo('#had_vote', 1000);
+
+       		 }
+
+				});
+</script>
+<link rel="stylesheet" href="../assets/components/likedislike/css/styles.css" type="text/css" />
+<link rel="stylesheet" href="../assets/components/quip/css/web.css" type="text/css" />
+</head>
+<body>
+	<div class="wr_header">
+	<div class="header">
+		<div class="h_logo">
+		<a href="../index.html">
+			<img src="../uplfile/logo.png">
+			</a>
+		</div>
+		<!--<div class="top_menu">
+				<a href="#">Вход</a> | <a href="#">Регистрация</a>
+		</div>-->
+		<div class="search">
+		<form class="sisea-search-form search_form" action="http://okna71.com/rezultatyi-poiska.html" method="get" autocomplete="off">
+  <fieldset style="border: none;position: relative;padding: 0;">
+    <label for="search"></label>
+    <input type="text" name="search" id="search_2" class="search_text" value="" placeholder="Поиск..." autocomplete="off"/>
+    <input type="hidden" name="id" value="10" /> 
+    <input type="submit" id="submit" value="Найти" class="search_btn"/>
+  </fieldset>
+</form>
+		</div>
+	</div>
+</div>
+<div class="wr_header_menu">
+	<div class="header_menu">
+		<ul><li class="first"><a href="../index/index.html" title="" >Новости</a></li>
+<li><a href="../akczii.html" title="" >Акции компаний</a></li>
+<li class="active"><a href="index.html" title="" >Рейтинг фирм Тулы</a></li>
+<li><a href="http://okna71.com/otzyivyi-klientov.html" title="" >Отзывы клиентов</a></li>
+<li><a href="../profilnyie-sistemyi/index.html" title="" >Профили</a></li>
+<li><a href="../stati/index.html" title="" >Статьи</a></li>
+<li class="last"><a href="../about.html" title="" >О сайте</a></li>
+</ul>
+	</div>
+</div>
+<div class="wr_container">
+	<div class="content">
+	<div id="left_content">
+		<div class="top10">
+			<span class="art_title">Топ Тулы <small>2016-2017</small></span>
+<!--<ol>
+<li><a href="rejting-firm/grand.html">Гранд</a><div class="rating"><span class="green">+12</span> / <span class="red">-4</span></div></li>
+<li><a href="rejting-firm/tzsk.html">ТЗСК</a><div class="rating"><span class="green">+8</span> / <span class="red">-10</span></div></li>
+<li><a href="rejting-firm/profstroj.html">Профстрой</a><div class="rating"><span class="green">+4</span> / <span class="red">-</span></div></li>
+<li><a href="rejting-firm/niko.html">НИКО</a><div class="rating"><span class="green">+4</span> / <span class="red">-1</span></div></li>
+<li><a href="rejting-firm/belyie-okna.html">Белые окна</a><div class="rating"><span class="green">+3</span> / <span class="red">-1</span></div></li>
+<li><a href="rejting-firm/dostupnyie-okna.html">Доступные окна</a><div class="rating"><span class="green">+3</span> / <span class="red">-3</span></div></li>
+<li><a href="rejting-firm/mir-okon.html">Мир окон</a><div class="rating"><span class="green">+2</span> / <span class="red">-1</span></div></li>
+<li><a href="rejting-firm/narodnyie-okna.html">Народные окна</a><div class="rating"><span class="green">+2</span> / <span class="red">-4</span></div></li>
+<li><a href="rejting-firm/smalta.html">Смальта</a><div class="rating"><span class="green">+1</span> / <span class="red">-</span></div></li>
+<li><a href="rejting-firm/krasivyie-okna.html">Красивые окна</a><div class="rating"><span class="green">+1</span> / <span class="red">-</span></div></li>
+</ol>-->
+<table width="300">
+
+
+<tr>
+<td rowspan="2"><p><img style="display: block; margin-left: auto; margin-right: auto;" src="../images/bp.jpg" width="35" height="35" /></p></td>
+<td><strong>Лучшие цены</strong></td>
+</tr>
+<tr>
+<td><a href="tzsk.html">ТЗСК</a></td>
+</tr>
+
+<tr>
+<td rowspan="2"><p><img style="display: block; margin-left: auto; margin-right: auto;" src="../images/kach.jpg" width="35" height="35" /></p></td>
+<td><strong>Лучшее качество</strong></td>
+</tr>
+<tr>
+<td><a href="tzsk.html">ТЗСК</a></td>
+</tr>
+
+
+<tr>
+<td rowspan="2"><p><img style="display: block; margin-left: auto; margin-right: auto;" src="../images/srok.jpg" width="35" height="35" /></p></td>
+<td><strong>Лучшие сроки</strong></td>
+</tr>
+<tr>
+<td><a href="niko.html">НИКО</a></td>
+</tr>
+
+</table>
+
+<center></center>
+		</div>
+		<div id="last_articles">
+		<span class="art_title">Последние статьи</span>
+		<div class="one_article">
+	<a href="../stati/pochemu-plastikovoe-okno-takoe-dolgovechnoe.html" class="link_article">Почему пластиковое окно такое долговечное?</a>
+	<p>ПВХ-окно способно прослужить до 20 лет без серьёзных поломок, а современным моделям прогнозируют срок годности до 45 лет. Даже старые технологии позволяли&#8230;</p>
+</div>
+<div class="one_article">
+	<a href="../stati/kakimi-dolzhnyi-byit-okna-dlya-mansardyi.html" class="link_article">Какими должны быть окна для мансарды</a>
+	<p>Мансарда – это жилое помещение под крышей, чаще всего второй этаж загородного дома. Чердачное помещение имеет покатую крышу и всего две прямые стены,&#8230;</p>
+</div>
+<div class="one_article">
+	<a href="../stati/kak-umenshit-kondensacziyu-vlagi-na-plastikovyix-oknax.html" class="link_article">Как уменьшить конденсацию влаги на пластиковых окнах</a>
+	<p>Образование влаги на окне – это одна из самых частых неприятностей, на которые жалуются владельцы ПВХ-профилей. Конденсат может стать причиной порчи&#8230;</p>
+</div>
+		</div>
+	</div>
+		<div id="right_content">
+		<h1>Информация о фирме Белые окна</h1>
+		<div id="block_one_company">
+		<!---->
+<div id="map"><b>Схема проезда</b><br/><br/><!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (начало) --> <div id="ymaps-map-id_135318756770959203364" style="width: 315px; height: 270px;"></div> <div style="width: 315px; text-align: right;"><a href="http://api.yandex.ru/maps/tools/constructor/index.xml" target="_blank" style="color: ffe400; font: 13px Arial, Helvetica, sans-serif;">Создано с помощью инструментов Яндекс.Карт</a></div> <script type="text/javascript">function fid_135318756770959203364(ymaps) {var map = new ymaps.Map("ymaps-map-id_135318756770959203364", {center: [37.59137216931152, 54.200143375373976], zoom: 16, type: "yandex#map"});map.controls.add("zoomControl").add("mapTools").add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));map.geoObjects.add(new ymaps.Placemark([37.61945, 54.208206], {balloonContent: ""}, {preset: "twirl#redDotIcon"})).add(new ymaps.Placemark([37.591458, 54.199854], {balloonContent: ""}, {preset: "twirl#redDotIcon"}));};</script> <script type="text/javascript" src="http://api-maps.yandex.ru/2.0-stable/?lang=ru-RU&coordorder=longlat&load=package.full&wizard=constructor&onload=fid_135318756770959203364"></script> <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) --><br><br>
+<b>Рейтинг:</b><table> <tbody> <tr> <td>Цены</td> <td rowspan="3"><img width="165" height="65" align="right" src="../comp/belrt.JPG" /></td> </tr> <tr> <td>Сроки</td> </tr> <tr> <td>Качество</td> </tr> </tbody> </table></div>
+
+
+	<b>Основная информация</b><br/><br/>
+		<table id="about_the_company" cellpadding="0" cellspacing="0" width="320px">
+<tr>
+<td class="first_td"><b>Адрес: </b></td><td class="second_td"> г. Тула, ул. Фрунзе, д.3, оф. 317</td>
+</tr>
+<tr>
+<td class="first_td" ><b>Телефон: </b></td><td class="second_td" >+7 (4872) 52-61-00, 52-61-01</td>
+</tr>
+<tr>
+<td class="first_td"><b>E-mail: </b></td><td class="second_td">info@belookna.ru</td>
+</tr>
+<tr>
+<td class="first_td"><b>Сайт: </b></td><td class="second_td" ><a rel="nofollow" target="_blank" href="http://belookna.ru">http://belookna.ru</a></td>
+</tr>
+<tr>
+<td class="first_td"><b>График работы: </b></td><td class="second_td" >Понедельник-пятница с 10-18, суббота с 10-14</td>
+</tr>
+<!--<tr>
+<td class="first_td"><b>Рейтинг: </b></td><td class="second_td"><div class="right_block_2"><span class="green">+ 3</span> / <span class="red">1 -</span></div></td>
+</tr>/-->
+<tr>
+<td colspan="2"><div id="desc"><b>Описание фирмы:</b><br/>Компанию Белые окна можно заслуженно считать лидером на рынке ПВХ оконных конструкций Тулы. Судя по отзывам от покупателей, фирма является более чем порядочным производителем пластиковых оконных систем. Все изготавливаемые изделия подвергаются жёсткому контролю качества. В результате заказчик получает изделие отменного качества по приемлемой цене.</div></td>
+</tr>
+		</table>
+<br class="clear"/>
+
+	<table id="one_comp" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="2">
+	<span class="comments">Отзывы (15)</span>  
+<div class="quip">                                 
+  <a name="comments"></a>
+    <div id="quip-topofcomments-qcom"></div>
+    <ol class="quip-comment-list">
+    
+<li class="quip-comment" id="qcom44" >
+<div id="qcom44-div" class="quip-comment-body ">
+    <div class="quip-comment-right">
+        
+    </div>
+
+    <p class="quip-comment-meta">
+        <div class="title_review"> Кристина Просолова<br>
+		<span style="color: #787878;font-size: 11px;"> 9.03.2013 12:21</span></div>
+        
+    </p>
+
+    <div class="quip-comment-text">
+        <p>Заказывала дважды в "Белых окнах" ни разу не пожалела. По соотношению цена/качество это лучшая фирма в Туле по окнам! Рекомендую её всем друзьям и знакомым.</p>
+
+        <p><span class="quip-reply-link"><a class="reply" href="belyie-okna.html@quip_thread=blogPost16&amp;quip_parent=44">Ответить</a></span></p>
+    </div>
+
+    <div class="quip-comment-options">
+        
+        
+    </div>
+    <div class="quip-break"></div>
+</div>
+    
+</li>
+<li class="quip-comment" id="qcom45" >
+<div id="qcom45-div" class="quip-comment-body quip-comment-alt">
+    <div class="quip-comment-right">
+        
+    </div>
+
+    <p class="quip-comment-meta">
+        <div class="title_review"> 5156213<br>
+		<span style="color: #787878;font-size: 11px;">27.03.2013 16:26</span></div>
+        
+    </p>
+
+    <div class="quip-comment-text">
+        <p>Какое соотношение цена/качество? Эта контора сплошной развод на бабло, им бы только ваше деньги получить и все - ни ответа ни привета.</p>
+
+        <p><span class="quip-reply-link"><a class="reply" href="belyie-okna.html@quip_thread=blogPost16&amp;quip_parent=45">Ответить</a></span></p>
+    </div>
+
+    <div class="quip-comment-options">
+        
+        
+    </div>
+    <div class="quip-break"></div>
+</div>
+    
+</li>
+
+
+<li class="quip-comment" id="qcom46" >
+<div id="qcom46-div" class="quip-comment-body ">
+    <div class="quip-comment-right">
+        
+    </div>
+
+    <p class="quip-comment-meta">
+        <div class="title_review"> Сергей Прошкин (AlexArtSoft)<br>
+		<span style="color: #787878;font-size: 11px;"> 3.05.2013 10:20</span></div>
+        
+    </p>
+
+    <div class="quip-comment-text">
+        <p>Заказывали у них остекление всего офиса, оказалось очень даже приемлемая ценна. Установили все в оговоренные сроки, без лишнего шума и грязи. Вот думаем когда будем открывать новый офис, обязательно обратимся к ним снова.<br />
+</p>
+
+        <p><span class="quip-reply-link"><a class="reply" href="belyie-okna.html@quip_thread=blogPost16&amp;quip_parent=46">Ответить</a></span></p>
+    </div>
+
+    <div class="quip-comment-options">
+        
+        
+    </div>
+    <div class="quip-break"></div>
+</div>
+    <ol class="quip-comment-list"><li class="quip-comment" id="qcom47" >
+<div id="qcom47-div" class="quip-comment-body quip-comment-alt">
+    <div class="quip-comment-right">
+        
+    </div>
+
+    <p class="quip-comment-meta">
+        <div class="title_review"> Игорь<br>
+		<span style="color: #787878;font-size: 11px;">17.05.2013 20:58</span></div>
+        
+    </p>
+
+    <div class="quip-comment-text">
+        <p>А у них есть скидки на большие заказы? В какие сроки они ставят? Вы сравнивали цены с другими фирмами в Туле?</p>
+
+        <p><span class="quip-reply-link"><a class="reply" href="belyie-okna.html@quip_thread=blogPost16&amp;quip_parent=47">Ответить</a></span></p>
+    </div>
+
+    <div class="quip-comment-options">
+        
+        
+    </div>
+    <div class="quip-break"></div>
+</div>
+    <ol class="quip-comment-list"><li class="quip-comment" id="qcom48" >
+<div id="qcom48-div" class="quip-comment-body ">
+    <div class="quip-comment-right">
+        
+    </div>
+
+    <p class="quip-comment-meta">
+        <div class="title_review"> Ирина<br>
+		<span style="color: #787878;font-size: 11px;">11.06.2013 18:20</span></div>
+        
+    </p>
+
+    <div class="quip-comment-text">
+        <p>Мне кажется вам лучше зайти на их сайт или позвонить в офис, а лучше вообще приехать и все обсудить. От себя добавлю что это очень достойная фирма, таких в Туле очень мало.</p>
+
+        <p><span class="quip-reply-link"><a class="reply" href="belyie-okna.html@quip_thread=blogPost16&amp;quip_parent=48">Ответить</a></span></p>
+    </div>
+
+    <div class="quip-comment-options">
+        
+        
+    </div>
+    <div class="quip-break"></div>
+</div>
+    
+</li></ol>
+</li></ol>
+</li>
+
+<li class="quip-comment" id="qcom76" >
+<div id="qcom76-div" class="quip-comment-body quip-comment-alt">
+    <div class="quip-comment-right">
+        
+    </div>
+
+    <p class="quip-comment-meta">
+        <div class="title_review"> Олеся<br>
+		<span style="color: #787878;font-size: 11px;"> 4.06.2014 10:42</span></div>
+        
+    </p>
+
+    <div class="quip-comment-text">
+        <p>Очень рада, что обратилась именно в компанию Белые окна, ремонт дело сложное, стараешься и денег сэкономить и так сказать, что бы не в убыток качеству. Компания ставила окна моим соседям и посмотрев на их работу, я не задумываясь заказала окна. Монтаж и доставка была произведена в срок, работают аккуратно, мусор за собой убирают. Итог: ребята действительно молодцы. Рекомендую.</p>
+
+        <p><span class="quip-reply-link"><a class="reply" href="belyie-okna.html@quip_thread=blogPost16&amp;quip_parent=76">Ответить</a></span></p>
+    </div>
+
+    <div class="quip-comment-options">
+        
+        
+    </div>
+    <div class="quip-break"></div>
+</div>
+    <ol class="quip-comment-list"><li class="quip-comment" id="qcom184" >
+<div id="qcom184-div" class="quip-comment-body ">
+    <div class="quip-comment-right">
+        
+    </div>
+
+    <p class="quip-comment-meta">
+        <div class="title_review"> Наталья<br>
+		<span style="color: #787878;font-size: 11px;">21.09.2016 10:26</span></div>
+        
+    </p>
+
+    <div class="quip-comment-text">
+        <p>Окнами до сих пор довольны?Нареканий в пользовании нет?</p>
+
+        <p><span class="quip-reply-link"><a class="reply" href="belyie-okna.html@quip_thread=blogPost16&amp;quip_parent=184">Ответить</a></span></p>
+    </div>
+
+    <div class="quip-comment-options">
+        
+        
+    </div>
+    <div class="quip-break"></div>
+</div>
+    
+</li></ol>
+</li>
+<li class="quip-comment" id="qcom91" >
+<div id="qcom91-div" class="quip-comment-body quip-comment-alt">
+    <div class="quip-comment-right">
+        
+    </div>
+
+    <p class="quip-comment-meta">
+        <div class="title_review"> Станислав<br>
+		<span style="color: #787878;font-size: 11px;">18.03.2015 10:02</span></div>
+        
+    </p>
+
+    <div class="quip-comment-text">
+        <p>5+++++, всем рекомендую компанию Белые окна! Заказывал 2 окна и балконный блок в 9ти этажку по улице Кирова 19. Все чисто и аккуратно. Профиль Deceuninck шикарный, белый,чистый. Кто хочет хорошие окна без лишнего стресса - обращайтесь!</p>
+
+        <p><span class="quip-reply-link"><a class="reply" href="belyie-okna.html@quip_thread=blogPost16&amp;quip_parent=91">Ответить</a></span></p>
+    </div>
+
+    <div class="quip-comment-options">
+        
+        
+    </div>
+    <div class="quip-break"></div>
+</div>
+    
+</li>
+<li class="quip-comment" id="qcom98" >
+<div id="qcom98-div" class="quip-comment-body ">
+    <div class="quip-comment-right">
+        
+    </div>
+
+    <p class="quip-comment-meta">
+        <div class="title_review"> Ирина<br>
+		<span style="color: #787878;font-size: 11px;">19.05.2015 17:58</span></div>
+        
+    </p>
+
+    <div class="quip-comment-text">
+        <p>Отличная фирма и сотрудники очень хорошие, все причем! Менеджер, Екатерина помогла определиться с окнами. Быстро приехали и все качественно поставили!!! Мне сделали большую скидку и подарили средство по уходу за окнами! Очень приятно было сотрудничать, СПАСИБО!!!!!!!!!! </p>
+
+        <p><span class="quip-reply-link"><a class="reply" href="belyie-okna.html@quip_thread=blogPost16&amp;quip_parent=98">Ответить</a></span></p>
+    </div>
+
+    <div class="quip-comment-options">
+        
+        
+    </div>
+    <div class="quip-break"></div>
+</div>
+    
+</li>
+<li class="quip-comment" id="qcom106" >
+<div id="qcom106-div" class="quip-comment-body quip-comment-alt">
+    <div class="quip-comment-right">
+        
+    </div>
+
+    <p class="quip-comment-meta">
+        <div class="title_review"> Галина<br>
+		<span style="color: #787878;font-size: 11px;"> 6.07.2015 21:49</span></div>
+        
+    </p>
+
+    <div class="quip-comment-text">
+        <p>Заказывали 5 окон, замерщик замерил с большими неточностями, что обнаружилось в процессе установки. Огромные зазоры по бокам окон не качественно и некрасиво замазали, рваная резинка на 1 окне, вентиляционные отверстия в окнах все с заусенцами, 5 небольших окон устанавливали 12 часов!!! После,остальные окна устанавливала  компания "Профстрой" - сделали все очень быстро, качественно и профессионально!!!!</p>
+
+        <p><span class="quip-reply-link"><a class="reply" href="belyie-okna.html@quip_thread=blogPost16&amp;quip_parent=106">Ответить</a></span></p>
+    </div>
+
+    <div class="quip-comment-options">
+        
+        
+    </div>
+    <div class="quip-break"></div>
+</div>
+    
+</li>
+<li class="quip-comment" id="qcom164" >
+<div id="qcom164-div" class="quip-comment-body ">
+    <div class="quip-comment-right">
+        
+    </div>
+
+    <p class="quip-comment-meta">
+        <div class="title_review"> Марат<br>
+		<span style="color: #787878;font-size: 11px;">27.05.2016 22:03</span></div>
+        
+    </p>
+
+    <div class="quip-comment-text">
+        <p>Выражаю огромную благодарность"Белым окнам"!Заказывал у них остекление коттеджа. Всё на высшем уровне от консультации и до выполнения заказа. Очень порадовала организованность доставки и монтажа, все сделано вовремя и главное качественно, без каких-либо задержек и проблем. Обязательно посоветую эту компанию своим знакомым. Еще раз СПАСИБО!</p>
+
+        <p><span class="quip-reply-link"><a class="reply" href="belyie-okna.html@quip_thread=blogPost16&amp;quip_parent=164">Ответить</a></span></p>
+    </div>
+
+    <div class="quip-comment-options">
+        
+        
+    </div>
+    <div class="quip-break"></div>
+</div>
+    
+</li>
+<li class="quip-comment" id="qcom170" >
+<div id="qcom170-div" class="quip-comment-body quip-comment-alt">
+    <div class="quip-comment-right">
+        
+    </div>
+
+    <p class="quip-comment-meta">
+        <div class="title_review"> Кирилл<br>
+		<span style="color: #787878;font-size: 11px;">30.06.2016 22:14</span></div>
+        
+    </p>
+
+    <div class="quip-comment-text">
+        <p>После того, как я переехал в новый район, первое, что стало наиболее сильно волновать меня при приближении холодов, это качество предустановленных окон и стеклопакетов в них. Не углубляясь в историю поиска хорошей компании, могу сказать лишь то, что остановиться на Белых окнах - было настоящей удачей. Механизмы работают как в швейцарских часах, а сквозняки появляются, только когда мне это нужно! Огромное спасибо компании, в скором времени собираюсь устанавливать окна в загородный дом и непременно воспользуюсь услугами именно этой фирмы. <br />
+Спасибо!</p>
+
+        <p><span class="quip-reply-link"><a class="reply" href="belyie-okna.html@quip_thread=blogPost16&amp;quip_parent=170">Ответить</a></span></p>
+    </div>
+
+    <div class="quip-comment-options">
+        
+        
+    </div>
+    <div class="quip-break"></div>
+</div>
+    
+</li>
+<li class="quip-comment" id="qcom213" >
+<div id="qcom213-div" class="quip-comment-body ">
+    <div class="quip-comment-right">
+        
+    </div>
+
+    <p class="quip-comment-meta">
+        <div class="title_review"> Ольга<br>
+		<span style="color: #787878;font-size: 11px;">26.05.2017 17:27</span></div>
+        
+    </p>
+
+    <div class="quip-comment-text">
+        <p>Оцениваю на твердую 5. Заказали на прошлой неделе кухонное окно, в течение 10 минут девушка-менеджер отправила расчет по заявке и грамотно проконсультировала. За пять дней нам его изготовили, доставили и установили! По цене и качеству получилось идеальное соотношение</p>
+
+        <p><span class="quip-reply-link"><a class="reply" href="belyie-okna.html@quip_thread=blogPost16&amp;quip_parent=213">Ответить</a></span></p>
+    </div>
+
+    <div class="quip-comment-options">
+        
+        
+    </div>
+    <div class="quip-break"></div>
+</div>
+    
+</li>
+<li class="quip-comment" id="qcom218" >
+<div id="qcom218-div" class="quip-comment-body quip-comment-alt">
+    <div class="quip-comment-right">
+        
+    </div>
+
+    <p class="quip-comment-meta">
+        <div class="title_review"> Зоя<br>
+		<span style="color: #787878;font-size: 11px;">30.06.2017 21:12</span></div>
+        
+    </p>
+
+    <div class="quip-comment-text">
+        <p>Особая благодарность консультанту, именно она вела весь наш заказ от начала и до конца, помогала все состыковать, подбирала подходящий вариант, ведь окна мы заказывали для пожилых родителей. Она очень светлый человек и очень грамотный, профессиональный работник. Попросили ее подобрать бригаду монтажников, которые вели бы себя корректно и работали быстро. От бригады родители просто в восторге. Выполнили все очень быстро и красиво, с установкой и отделкой всех окон справились за один день. Теперь родители наслаждаются теплом новых окон.</p>
+
+        <p><span class="quip-reply-link"><a class="reply" href="belyie-okna.html@quip_thread=blogPost16&amp;quip_parent=218">Ответить</a></span></p>
+    </div>
+
+    <div class="quip-comment-options">
+        
+        
+    </div>
+    <div class="quip-break"></div>
+</div>
+    
+</li>
+<li class="quip-comment" id="qcom221" >
+<div id="qcom221-div" class="quip-comment-body ">
+    <div class="quip-comment-right">
+        
+    </div>
+
+    <p class="quip-comment-meta">
+        <div class="title_review"> Коля<br>
+		<span style="color: #787878;font-size: 11px;">22.08.2017 00:16</span></div>
+        
+    </p>
+
+    <div class="quip-comment-text">
+        <p>Доволен, что связался с этой конторой, качественные окна, привезли упакованные и в пленках, по итогу пленки сняли - царапин не обнаружено, все отрегулировано.</p>
+
+        <p><span class="quip-reply-link"><a class="reply" href="belyie-okna.html@quip_thread=blogPost16&amp;quip_parent=221">Ответить</a></span></p>
+    </div>
+
+    <div class="quip-comment-options">
+        
+        
+    </div>
+    <div class="quip-break"></div>
+</div>
+    
+</li>
+
+    </ol>
+
+    
+</div>
+</td>
+</tr>
+<tr>
+<td class="first_td" id="otzyv" colspan="2"><div class="comments">Добавить новый отзыв<br/> </div>
+		<a name="quip-comment-preview-box-qcom"></a>
+
+<link href="../assets/templates/okn/qaptcha.css" type="text/css" rel="stylesheet" /> 
+<span class="quip-success" id="quip-success-qcom"></span>
+<form id="quip-add-comment-qcom" action="belyie-okna.html#quip-comment-preview-box-qcom" method="post">
+  <input type="hidden" name="nospam" value="" />
+  <input type="hidden" name="thread" value="blogPost16" />
+  <input type="hidden" name="parent" value="0" />
+  <div class="quip-comment quip-add-comment">
+    <span class="quip-error"></span>
+      <div class="quip-fld">
+        <label for="quip-comment-name">Имя<sup>*</sup></label>
+        <input type="text" name="name" id="quip-comment-name-qcom" value="" required="required" placeholder="Имя/Фамилия"/>
+        <br class="clear"/>
+      </div>
+      <div class="quip-fld">
+        <label for="quip-comment-email">E-mail<sup>*</sup><span class="error"></span></label>
+        <input type="text" name="email" id="quip-comment-email-qcom" value="" required="required" placeholder="E-mail(не публикуется)"/>
+        <br class="clear"/>
+      </div>
+						<div class="quip-fld">
+   <label for="quip-comment-text">Текст отзыва<sup>*</sup><span class="small_error_2">не менее 20 знаков</span><span class="error"></span></label>
+    <textarea name="comment" id="quip-comment-box-qcom" value="" rows="5" required="required" placeholder="Текст отзыва"></textarea>
+				</div>
+  </div>
+   <br class="clear" />
+			<button class="but_sub" type="submit" name="quip-preview" value="1">Просмотр</button>
+
+<div id="validate_form" style="display:none;">
+<br class="clear"/>
+				 <p style="font-style:italic; font-size: 12px;font-weight:normal;">Для участия в рейтинге и защиты от автоматического заполнения.<br/> Передвиньте пожалуйста ползунок вправо.</p>
+    
+    <div id="QapTcha" class="clear"></div>
+
+<script type="text/javascript" src="../assets/templates/okn/scripts/placeholder.js"></script>
+<script type="text/javascript" src="../assets/templates/okn/scripts/jquery-ui.js"></script>
+<script type="text/javascript" src="../assets/templates/okn/scripts/jquery.ui.touch.js"></script>
+<script type="text/javascript" src="../assets/templates/okn/scripts/qaptcha_comment.js"></script>
+<script type="text/javascript">
+  $('#QapTcha').QapTcha({});
+</script>
+<div id="captcha" style="display:none;">
+  <input type="submit" class="comtbut but_for_comm" name="quip-post" value="Разместить комментарий">
+				</div>
+				</div>
+				</form>
+<!--<div id="had_vote" class="error_2">ВЫ УЖЕ ПРОГОЛОСОВАЛИ.</div>-->
+<div class="quip-fld star_marks label_comm" style="display:none;">
+<span class="error_2" id="replace">Теперь вы можете поставить оценку выбранной компании.</span>
+<label for="quip-comment-mark" id="had_vote" ></label>
+<div class="rat"><div id="rating" style="position: relative;"><form method="post" id="likedislike_3" class="likedislike mini_likedislik center" name="mini_likedislik">
+    <input type="hidden" name="likedislike_id" value="3" />
+	<input type="hidden" name="likedislike_format" value="{UP} согласны" />
+    <input type="hidden" name="likedislike_round" value="0" />
+    <input type="hidden" name="likedislike_rating" value="type=1,tv=likeDislike,output=votes_up,res=16" />
+
+	<strong class="result1 error">3 согласны</strong>
+
+	<input class="up"   name="likedislike_vote" type="submit" value="+1" title="Vote up"  />
+</form>
+<form method="post" id="likedislike_3" class="likedislike mini_likedislik center" name="mini_likedislik">
+    <input type="hidden" name="likedislike_id" value="3" />
+	<input type="hidden" name="likedislike_format" value="{DOWN} против" />
+    <input type="hidden" name="likedislike_round" value="0" />
+    <input type="hidden" name="likedislike_rating" value="type=1,tv=likeDislike_minus,output=votes_down,res=16" />
+
+	<strong class="result1 error">1 против</strong>
+
+	<input class="down" name="likedislike_vote" type="submit" value="-1" title="Vote down"  />
+</form>
+<br class="clear"/></div></div>
+	<br class="clear"/>
+</div>
+
+
+<br class="clear" />
+
+
+	<br class="clear"/>
+</td>
+</tr>
+</table>
+	<div id="message">Спасибо за участие в голосовании</div>
+		</div>
+	</div>
+	<br class="clear"/>
+	</div>
+</div>
+<div class="wr_footer">
+	<div class="footer">
+	<div class="f_block">
+		<ul>
+			<li>
+				Copyright 2015 © okna71.ru<br/>
+				Независимый рейтинг фирм по производству 
+				и продаже пластиковых окон в Туле.
+				<div class="counters">
+					<!--<img src="./uplfile/c1.png">
+					<img src="./uplfile/c2.png">-->
+				</div>
+			</li>
+			<li class="statistics">
+				<div>
+					<b>Статистика</b>
+				</div>
+				<div class="list_s">
+				Фирмы: <span class="s_number">17</span><br><br>
+				Отзывы: <span class="s_number">211</span><br><br>
+				Статьи: <span class="s_number">26</span><br><br>
+				</div>
+			</li>
+
+			<li>
+				<ul class="f_m1">
+						<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t14.4;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: показано число просмотров за 24"+
+" часа, посетителей за 24 часа и за сегодня' "+
+"border='0' width='88' height='31'><\/a>")
+//--></script><!--/LiveInternet-->
+<br>
+<!-- begin of Top100 code -->
+<script id="top100Counter" type="text/javascript" src="http://counter.rambler.ru/top100.jcn?2937778"></script>
+<noscript>
+<a href="http://top100.rambler.ru/navi/2937778/">
+<img src="http://counter.rambler.ru/top100.cnt?2937778" alt="Rambler's Top100" border="0" />
+</a>
+</noscript>
+<!-- end of Top100 code -->
+						<!--<ul class="f_m1"><li class="first"><a href="index/" title="" >Новости</a></li>
+<li><a href="akczii.html" title="" >Акции компаний</a></li>
+<li class="active"><a href="rejting-firm/" title="" >Рейтинг фирм Тулы</a></li>
+<li><a href="otzyivyi-klientov.html" title="" >Отзывы клиентов</a></li>
+<li><a href="profilnyie-sistemyi/" title="" >Профили</a></li>
+<li><a href="stati/" title="" >Статьи</a></li>
+<li class="last"><a href="about.html" title="" >О сайте</a></li>
+</ul>
+						<li><a href="akczii.html">Акции на окна</a></li>
+<li><a href="index/">Новости</a></li>-->
+
+					</ul>
+
+			</li>
+		</ul>
+	</div>
+	</div>
+</div>
+<script type="text/javascript">var url_assets = "/assets/components/likedislike/"; var likedislike_ctx = "web";</script><script src="../assets/components/likedislike/js/web/likedislike.js"></script>
+</body>
+</html>

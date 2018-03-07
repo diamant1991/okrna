@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>Все акции фирм по пластиковым окнам в Туле - "Okna71.com"</title>
+  <meta name="keywords" content="акции фирмы компании пластиковые окна " />
+  <meta name="description" content="Этот раздел посвящен акциям и скидкам фирм по пластиковым окнам Тулы и Тульской области." />
+  <base href="" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script type='text/javascript' src='assets/templates/okn/scripts/jquery-1.7.2.min.js'></script>
+<script type="text/javascript">
+$(document).ready(function () {
+
+				//main_slider
+				var current = 7;
+				var count = $('#foo2 > li').size(); 
+
+				if (current<= 7){
+				$(".prev_1").css('background', 'url(../images/arrow_left.png) no-repeat').prop('disabled', true);//если слайд меньше единицы левая кнопка скрываеться
+
+				};
+				if (current < count){
+				$(".next_1").css('background', 'url(../images/arrow_right1.png) no-repeat').prop('disabled', false);//правая ннопка работает за исключением...
+				};
+				if (current >= count){
+				$(".next_1").css('background', 'url(../images/arrow_right.png) no-repeat').prop('disabled', true);//когда она на последнем слайде
+				};
+
+				$(".next_1").click(function() {
+				current++;
+				$("#slider_main").animate({"left": "-=134px"}, 400);
+				if (current >= count) {
+				$(".next_1").css('background', 'url(../images/arrow_right.png) no-repeat').prop('disabled', true);
+				};
+				if (current < count){
+				$(".next_1").css('background', 'url(../images/arrow_right1.png) no-repeat').prop('disabled', false);;
+				};
+				if (current > 7){
+				$(".prev_1").css('background', 'url(../images/arrow_left1.png) no-repeat').prop('disabled', false);;//если слайд меньше единицы левая кнопка скрываеться
+				};
+				});
+
+				$(".prev_1").click(function() {
+				current--;
+				$("#slider_main").animate({"left": "+=134px"}, 400);
+				if (current <=7) {
+				$(".prev_1").css('background', 'url(../images/arrow_left.png) no-repeat').prop('disabled', true);
+				};
+				if (current >= 7){
+				$(".next_1").css('background', 'url(../images/arrow_right1.png) no-repeat').prop('disabled', false);;//если слайд меньше единицы левая кнопка скрываеться
+				};
+				});
+});				
+</script>
+
+</head>
+<body>
+	<div class="wr_header">
+	<div class="header">
+		<div class="h_logo">
+		<a href="index.html">
+			<img src="uplfile/logo.png">
+			</a>
+		</div>
+		<!--<div class="top_menu">
+				<a href="#">Вход</a> | <a href="#">Регистрация</a>
+		</div>-->
+		<div class="search">
+		<form class="sisea-search-form search_form" action="http://okna71.com/rezultatyi-poiska.html" method="get" autocomplete="off">
+  <fieldset style="border: none;position: relative;padding: 0;">
+    <label for="search"></label>
+    <input type="text" name="search" id="search_2" class="search_text" value="" placeholder="Поиск..." autocomplete="off"/>
+    <input type="hidden" name="id" value="10" /> 
+    <input type="submit" id="submit" value="Найти" class="search_btn"/>
+  </fieldset>
+</form>
+		</div>
+	</div>
+</div>
+<div class="wr_header_menu">
+	<div class="header_menu">
+		<ul><li class="first"><a href="index/index.html" title="" >Новости</a></li>
+<li class="active"><a href="akczii.html" title="" >Акции компаний</a></li>
+<li><a href="rejting-firm/index.html" title="" >Рейтинг фирм Тулы</a></li>
+<li><a href="http://okna71.com/otzyivyi-klientov.html" title="" >Отзывы клиентов</a></li>
+<li><a href="profilnyie-sistemyi/index.html" title="" >Профили</a></li>
+<li><a href="stati/index.html" title="" >Статьи</a></li>
+<li class="last"><a href="about.html" title="" >О сайте</a></li>
+</ul>
+	</div>
+</div>
+<div class="wr_container">
+	<div class="content">
+	<div id="left_content">
+	<div class="top10">
+			<span class="art_title">Топ Тулы <small>2016-2017</small></span>
+<!--<ol>
+<li><a href="rejting-firm/grand.html">Гранд</a><div class="rating"><span class="green">+12</span> / <span class="red">-4</span></div></li>
+<li><a href="rejting-firm/tzsk.html">ТЗСК</a><div class="rating"><span class="green">+8</span> / <span class="red">-10</span></div></li>
+<li><a href="rejting-firm/profstroj.html">Профстрой</a><div class="rating"><span class="green">+4</span> / <span class="red">-</span></div></li>
+<li><a href="rejting-firm/niko.html">НИКО</a><div class="rating"><span class="green">+4</span> / <span class="red">-1</span></div></li>
+<li><a href="rejting-firm/belyie-okna.html">Белые окна</a><div class="rating"><span class="green">+3</span> / <span class="red">-1</span></div></li>
+<li><a href="rejting-firm/dostupnyie-okna.html">Доступные окна</a><div class="rating"><span class="green">+3</span> / <span class="red">-3</span></div></li>
+<li><a href="rejting-firm/mir-okon.html">Мир окон</a><div class="rating"><span class="green">+2</span> / <span class="red">-1</span></div></li>
+<li><a href="rejting-firm/narodnyie-okna.html">Народные окна</a><div class="rating"><span class="green">+2</span> / <span class="red">-4</span></div></li>
+<li><a href="rejting-firm/smalta.html">Смальта</a><div class="rating"><span class="green">+1</span> / <span class="red">-</span></div></li>
+<li><a href="rejting-firm/krasivyie-okna.html">Красивые окна</a><div class="rating"><span class="green">+1</span> / <span class="red">-</span></div></li>
+</ol>-->
+<table width="300">
+
+
+<tr>
+<td rowspan="2"><p><img style="display: block; margin-left: auto; margin-right: auto;" src="images/bp.jpg" width="35" height="35" /></p></td>
+<td><strong>Лучшие цены</strong></td>
+</tr>
+<tr>
+<td><a href="rejting-firm/tzsk.html">ТЗСК</a></td>
+</tr>
+
+<tr>
+<td rowspan="2"><p><img style="display: block; margin-left: auto; margin-right: auto;" src="images/kach.jpg" width="35" height="35" /></p></td>
+<td><strong>Лучшее качество</strong></td>
+</tr>
+<tr>
+<td><a href="rejting-firm/tzsk.html">ТЗСК</a></td>
+</tr>
+
+
+<tr>
+<td rowspan="2"><p><img style="display: block; margin-left: auto; margin-right: auto;" src="images/srok.jpg" width="35" height="35" /></p></td>
+<td><strong>Лучшие сроки</strong></td>
+</tr>
+<tr>
+<td><a href="rejting-firm/niko.html">НИКО</a></td>
+</tr>
+
+</table>
+
+<center></center>
+		</div>
+		<div id="last_articles">
+		<span class="art_title">Последние статьи</span>
+		<div class="one_article">
+	<a href="stati/pochemu-plastikovoe-okno-takoe-dolgovechnoe.html" class="link_article">Почему пластиковое окно такое долговечное?</a>
+	<p>ПВХ-окно способно прослужить до 20 лет без серьёзных поломок, а современным моделям прогнозируют срок годности до 45 лет. Даже старые технологии позволяли&#8230;</p>
+</div>
+<div class="one_article">
+	<a href="stati/kakimi-dolzhnyi-byit-okna-dlya-mansardyi.html" class="link_article">Какими должны быть окна для мансарды</a>
+	<p>Мансарда – это жилое помещение под крышей, чаще всего второй этаж загородного дома. Чердачное помещение имеет покатую крышу и всего две прямые стены,&#8230;</p>
+</div>
+<div class="one_article">
+	<a href="stati/kak-umenshit-kondensacziyu-vlagi-na-plastikovyix-oknax.html" class="link_article">Как уменьшить конденсацию влаги на пластиковых окнах</a>
+	<p>Образование влаги на окне – это одна из самых частых неприятностей, на которые жалуются владельцы ПВХ-профилей. Конденсат может стать причиной порчи&#8230;</p>
+</div>
+		</div>
+	</div>
+		<div id="right_content">
+		<h1>Акции на окна</h1>
+		<p><strong><span style="color: #b22222;">Обновлено 30.08.2013</span></strong></p>
+<p>Для Вас, мы постарались подоборать все скидки и акции, которые оконные компании Тулы предоставляют своим клиентам. Старница будет постоянно обновляться, что бы предоставлять Вам самую акутальную информацию.</p>
+<table>
+<tbody>
+<tr>
+<td>
+<h2>На сайтах скидок</h2>
+<a href="http://www.kupongid.ru/tula/search_%D0%BE%D0%BA%D0%BD%D0%B0/" rel="nofollow" target="_blank">Купон гид - все купоны на одном сайте</a><br /><br /> <a href="http://tula.homsbox.ru/taxonomy/term/12,169" rel="nofollow" target="_blank">Хомсбокс - медийная компания</a><br /><br /><a href="http://tula.biglion.ru/search/?q=%D0%BF%D0%BB%D0%B0%D1%81%D1%82%D0%B8%D0%BA%D0%BE%D0%B2%D1%8B%D0%B5+%D0%BE%D0%BA%D0%BD%D0%B0+%D0%BF%D0%B2%D1%85&amp;c=" rel="nofollow" target="_blank">Biglion - это скидки</a></td>
+</tr>
+<tr>
+<td>
+<h2>На сайтах компаний</h2>
+<a href="http://www.dosokna.ru/shares/" rel="nofollow" target="_blank">Акции компании Доступные окна</a><br /><br /><a href="http://инво.рф/aktsii-i-spetspredlozheniya.html" rel="nofollow" target="_blank">Акции компании Инво</a><br /><br /><a href="http://www.neoplast.ru/akczii.html" rel="nofollow" target="_blank">Акции компании Профит</a><br /><br /><a href="http://belookna.ru/shares/" rel="nofollow" target="_blank">Акции компании Белые окна</a><br /><br /><a href="http://www.oknavtule.ru/sales/103.html" rel="nofollow" target="_blank">Акции компании Олимпия</a><br /><br /><a href="http://promt-okna.ru/share.php" rel="nofollow" target="_blank">Акции компании Промт</a><br /><br /><a href="http://narokna71.ru/" rel="nofollow" target="_blank">Акции компании Народные окна</a><br /><br /><a href="http://www.oknatulskie.ru/akcii-i-specialnye-predlozhenija.html" rel="nofollow" target="_blank">Акции компании Окна для вас</a><br /><br /><a href="http://www.mosokna.ru/actions/" rel="nofollow" target="_blank">Акции компании Московские окна</a><br /><br /><a href="http://kr-okna.ru/" rel="nofollow" target="_blank">Акции компании Красивые окна</a><br /><br /><a href="http://master-okna.ru/news.htm" rel="nofollow" target="_blank">Акции компании Мастер окна</a><br /><br /><a href="http://tmk-okna.ru/news.php#a15" rel="nofollow" target="_blank">Акции компании ТМК</a><br /><br /><a href="http://okna-smalta.ru/aktsii_skidki/" rel="nofollow" target="_blank">Акции компании Смальта</a><br /><br /><a href="http://www.profstroyokna.ru/news" rel="nofollow" target="_blank">Акции компании Профстрой</a><br /><br /><a href="http://planetaplus-okna.ru/acsii/" rel="nofollow" target="_blank">Акции компании Планета окон+</a><br /><br /><a href="http://www.grandtula.ru/stock.html" rel="nofollow" target="_blank">Акции компании Гранд</a></td>
+</tr>
+</tbody>
+</table>
+<!---->
+	</div>
+	<br class="clear"/>
+	</div>
+</div>
+<div class="wr_footer">
+	<div class="footer">
+	<div class="f_block">
+		<ul>
+			<li>
+				Copyright 2015 © okna71.ru<br/>
+				Независимый рейтинг фирм по производству 
+				и продаже пластиковых окон в Туле.
+				<div class="counters">
+					<!--<img src="./uplfile/c1.png">
+					<img src="./uplfile/c2.png">-->
+				</div>
+			</li>
+			<li class="statistics">
+				<div>
+					<b>Статистика</b>
+				</div>
+				<div class="list_s">
+				Фирмы: <span class="s_number">17</span><br><br>
+				Отзывы: <span class="s_number">211</span><br><br>
+				Статьи: <span class="s_number">26</span><br><br>
+				</div>
+			</li>
+
+			<li>
+				<ul class="f_m1">
+						<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t14.4;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: показано число просмотров за 24"+
+" часа, посетителей за 24 часа и за сегодня' "+
+"border='0' width='88' height='31'><\/a>")
+//--></script><!--/LiveInternet-->
+<br>
+<!-- begin of Top100 code -->
+<script id="top100Counter" type="text/javascript" src="http://counter.rambler.ru/top100.jcn?2937778"></script>
+<noscript>
+<a href="http://top100.rambler.ru/navi/2937778/">
+<img src="http://counter.rambler.ru/top100.cnt?2937778" alt="Rambler's Top100" border="0" />
+</a>
+</noscript>
+<!-- end of Top100 code -->
+						<!--<ul class="f_m1"><li class="first"><a href="index/" title="" >Новости</a></li>
+<li class="active"><a href="akczii.html" title="" >Акции компаний</a></li>
+<li><a href="rejting-firm/" title="" >Рейтинг фирм Тулы</a></li>
+<li><a href="otzyivyi-klientov.html" title="" >Отзывы клиентов</a></li>
+<li><a href="profilnyie-sistemyi/" title="" >Профили</a></li>
+<li><a href="stati/" title="" >Статьи</a></li>
+<li class="last"><a href="about.html" title="" >О сайте</a></li>
+</ul>
+						<li><a href="akczii.html">Акции на окна</a></li>
+<li><a href="index/">Новости</a></li>-->
+
+					</ul>
+
+			</li>
+		</ul>
+	</div>
+	</div>
+</div>
+</body>
+</html>

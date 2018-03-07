@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>Отзывы</title>
+  <meta name="keywords" content="акции фирмы компании пластиковые окна " />
+  <meta name="description" content="Этот раздел посвящен акциям и скидкам фирм по пластиковым окнам Тулы и Тульской области." />
+  <base href="" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script type='text/javascript' src='assets/templates/okn/scripts/jquery-1.7.2.min.js'></script>
+<script type="text/javascript">
+$(document).ready(function () {
+
+				//main_slider
+				var current = 7;
+				var count = $('#foo2 > li').size(); 
+
+				if (current<= 7){
+				$(".prev_1").css('background', 'url(../images/arrow_left.png) no-repeat').prop('disabled', true);//если слайд меньше единицы левая кнопка скрываеться
+
+				};
+				if (current < count){
+				$(".next_1").css('background', 'url(../images/arrow_right1.png) no-repeat').prop('disabled', false);//правая ннопка работает за исключением...
+				};
+				if (current >= count){
+				$(".next_1").css('background', 'url(../images/arrow_right.png) no-repeat').prop('disabled', true);//когда она на последнем слайде
+				};
+
+				$(".next_1").click(function() {
+				current++;
+				$("#slider_main").animate({"left": "-=134px"}, 400);
+				if (current >= count) {
+				$(".next_1").css('background', 'url(../images/arrow_right.png) no-repeat').prop('disabled', true);
+				};
+				if (current < count){
+				$(".next_1").css('background', 'url(../images/arrow_right1.png) no-repeat').prop('disabled', false);;
+				};
+				if (current > 7){
+				$(".prev_1").css('background', 'url(../images/arrow_left1.png) no-repeat').prop('disabled', false);;//если слайд меньше единицы левая кнопка скрываеться
+				};
+				});
+
+				$(".prev_1").click(function() {
+				current--;
+				$("#slider_main").animate({"left": "+=134px"}, 400);
+				if (current <=7) {
+				$(".prev_1").css('background', 'url(../images/arrow_left.png) no-repeat').prop('disabled', true);
+				};
+				if (current >= 7){
+				$(".next_1").css('background', 'url(../images/arrow_right1.png) no-repeat').prop('disabled', false);;//если слайд меньше единицы левая кнопка скрываеться
+				};
+				});
+});				
+</script>
+
+</head>
+<body>
+	<div class="wr_header">
+	<div class="header">
+		<div class="h_logo">
+		<a href="index.html">
+			<img src="uplfile/logo.png">
+			</a>
+		</div>
+		<!--<div class="top_menu">
+				<a href="#">Вход</a> | <a href="#">Регистрация</a>
+		</div>-->
+		<div class="search">
+		<form class="sisea-search-form search_form" action="http://okna71.com/rezultatyi-poiska.html" method="get" autocomplete="off">
+  <fieldset style="border: none;position: relative;padding: 0;">
+    <label for="search"></label>
+    <input type="text" name="search" id="search_2" class="search_text" value="" placeholder="Поиск..." autocomplete="off"/>
+    <input type="hidden" name="id" value="10" /> 
+    <input type="submit" id="submit" value="Найти" class="search_btn"/>
+  </fieldset>
+</form>
+		</div>
+	</div>
+</div>
+<div class="wr_header_menu">
+	<div class="header_menu">
+		<ul><li class="first"><a href="index/index.html" title="" >Новости</a></li>
+<li class="active"><a href="akczii.html" title="" >Акции компаний</a></li>
+<li><a href="rejting-firm/index.html" title="" >Рейтинг фирм Тулы</a></li>
+<li><a href="http://okna71.com/otzyivyi-klientov.html" title="" >Отзывы клиентов</a></li>
+<li><a href="profilnyie-sistemyi/index.html" title="" >Профили</a></li>
+<li><a href="stati/index.html" title="" >Статьи</a></li>
+<li class="last"><a href="about.html" title="" >О сайте</a></li>
+</ul>
+	</div>
+</div>
+<div class="wr_container">
+	<div class="content">
+	<div id="left_content">
+	<div class="top10">
+			<span class="art_title">Топ Тулы <small>2016-2017</small></span>
+<!--<ol>
+<li><a href="rejting-firm/grand.html">Гранд</a><div class="rating"><span class="green">+12</span> / <span class="red">-4</span></div></li>
+<li><a href="rejting-firm/tzsk.html">ТЗСК</a><div class="rating"><span class="green">+8</span> / <span class="red">-10</span></div></li>
+<li><a href="rejting-firm/profstroj.html">Профстрой</a><div class="rating"><span class="green">+4</span> / <span class="red">-</span></div></li>
+<li><a href="rejting-firm/niko.html">НИКО</a><div class="rating"><span class="green">+4</span> / <span class="red">-1</span></div></li>
+<li><a href="rejting-firm/belyie-okna.html">Белые окна</a><div class="rating"><span class="green">+3</span> / <span class="red">-1</span></div></li>
+<li><a href="rejting-firm/dostupnyie-okna.html">Доступные окна</a><div class="rating"><span class="green">+3</span> / <span class="red">-3</span></div></li>
+<li><a href="rejting-firm/mir-okon.html">Мир окон</a><div class="rating"><span class="green">+2</span> / <span class="red">-1</span></div></li>
+<li><a href="rejting-firm/narodnyie-okna.html">Народные окна</a><div class="rating"><span class="green">+2</span> / <span class="red">-4</span></div></li>
+<li><a href="rejting-firm/smalta.html">Смальта</a><div class="rating"><span class="green">+1</span> / <span class="red">-</span></div></li>
+<li><a href="rejting-firm/krasivyie-okna.html">Красивые окна</a><div class="rating"><span class="green">+1</span> / <span class="red">-</span></div></li>
+</ol>-->
+<table width="300">
+
+
+<tr>
+<td rowspan="2"><p><img style="display: block; margin-left: auto; margin-right: auto;" src="images/bp.jpg" width="35" height="35" /></p></td>
+<td><strong>Лучшие цены</strong></td>
+</tr>
+<tr>
+<td><a href="rejting-firm/tzsk.html">ТЗСК</a></td>
+</tr>
+
+<tr>
+<td rowspan="2"><p><img style="display: block; margin-left: auto; margin-right: auto;" src="images/kach.jpg" width="35" height="35" /></p></td>
+<td><strong>Лучшее качество</strong></td>
+</tr>
+<tr>
+<td><a href="rejting-firm/tzsk.html">ТЗСК</a></td>
+</tr>
+
+
+<tr>
+<td rowspan="2"><p><img style="display: block; margin-left: auto; margin-right: auto;" src="images/srok.jpg" width="35" height="35" /></p></td>
+<td><strong>Лучшие сроки</strong></td>
+</tr>
+<tr>
+<td><a href="rejting-firm/niko.html">НИКО</a></td>
+</tr>
+
+</table>
+
+<center></center>
+		</div>
+		<div id="last_articles">
+		<span class="art_title">Последние статьи</span>
+		<div class="one_article">
+	<a href="stati/pochemu-plastikovoe-okno-takoe-dolgovechnoe.html" class="link_article">Почему пластиковое окно такое долговечное?</a>
+	<p>ПВХ-окно способно прослужить до 20 лет без серьёзных поломок, а современным моделям прогнозируют срок годности до 45 лет. Даже старые технологии позволяли&#8230;</p>
+</div>
+<div class="one_article">
+	<a href="stati/kakimi-dolzhnyi-byit-okna-dlya-mansardyi.html" class="link_article">Какими должны быть окна для мансарды</a>
+	<p>Мансарда – это жилое помещение под крышей, чаще всего второй этаж загородного дома. Чердачное помещение имеет покатую крышу и всего две прямые стены,&#8230;</p>
+</div>
+<div class="one_article">
+	<a href="stati/kak-umenshit-kondensacziyu-vlagi-na-plastikovyix-oknax.html" class="link_article">Как уменьшить конденсацию влаги на пластиковых окнах</a>
+	<p>Образование влаги на окне – это одна из самых частых неприятностей, на которые жалуются владельцы ПВХ-профилей. Конденсат может стать причиной порчи&#8230;</p>
+</div>
+		</div>
+	</div>
+		<div id="right_content">
+		<h1>Отзывы клиентов</h1>
+		<div class="reviews"><ul style="padding:0;"><li>
+<div class="imm">Юля<br>
+							Отзыв о компании <a href="rejting-firm/biplan.html#qcom254">“Биплан”</a>
+							</div>
+							<div>С одной стороны, привлекательная цена, неплохое качество, с другой стороны плохой сервис. Прописанные…</div>
+					</li>
+
+<li>
+<div class="imm">Денис<br>
+							Отзыв о компании <a href="rejting-firm/grand.html#qcom253">“Гранд”</a>
+							</div>
+							<div>Установка не качественная. В одном месте окно установлено в притык с другим вообще без соединительной…</div>
+					</li>
+
+<li>
+<div class="imm">Олег<br>
+							Отзыв о компании <a href="rejting-firm/profit.html#qcom252">“Профит”</a>
+							</div>
+							<div>Заказывал окна для квартиры после ремонта. Сразу привезли только два окна, а третье задержали на две…</div>
+					</li>
+
+<li>
+<div class="imm">Денис <br>
+							Отзыв о компании <a href="rejting-firm/tzsk.html#qcom251">“ТЗСК”</a>
+							</div>
+							<div>Понравилось то, что уложились в сроки и поставили мне 5 окон за один день. Все сразу привезли в день…</div>
+					</li>
+
+<li>
+<div class="imm">Алена<br>
+							Отзыв о компании <a href="rejting-firm/profstroj.html#qcom250">“Профстрой”</a>
+							</div>
+							<div>становили окно и балконную группу, в первый год использования в зимний период появился конденсат на окнах,…</div>
+					</li>
+
+<li>
+<div class="imm">Алена<br>
+							Отзыв о компании <a href="rejting-firm/profstroj.html#qcom249">“Профстрой”</a>
+							</div>
+							<div>становили окно и балконную группу, в первый год использования в зимний период появился конденсат на окнах,…</div>
+					</li>
+
+<li>
+<div class="imm">Евгения<br>
+							Отзыв о компании <a href="rejting-firm/smalta.html#qcom248">“Смальта”</a>
+							</div>
+							<div>Считаю, что потратила деньги зря, нет в целом то все ок - быстро работают, аккуратно. Вот только после…</div>
+					</li>
+
+<li>
+<div class="imm">Юля<br>
+							Отзыв о компании <a href="rejting-firm/profstroj.html#qcom247">“Профстрой”</a>
+							</div>
+							<div>Вот и настали холода. 3х камерные новые рамы не выдерживают даже 10 градусный мороз. На балконе ( как…</div>
+					</li>
+
+<li>
+<div class="imm">Нелли <br>
+							Отзыв о компании <a href="rejting-firm/smalta.html#qcom246">“Смальта”</a>
+							</div>
+							<div>С виду хорошая компания,сайт информативный!стоит набрать по номеру,отвечает девушка с самомнением как…</div>
+					</li>
+
+<li>
+<div class="imm">Зинаида<br>
+							Отзыв о компании <a href="rejting-firm/grand.html#qcom245">“Гранд”</a>
+							</div>
+							<div>Фирма делает очень медленно, не пунктуально.</div>
+					</li>
+
+<li>
+<div class="imm">Michaelnix<br>
+							Отзыв о компании <a href="rejting-firm/tzsk.html#qcom244">“ТЗСК”</a>
+							</div>
+							<div>DRY BLOODER-АКТИВАТОР КЛЁВА ЗИМНИЙ <br>
+Заказать со скидкой 53%: <a href="http://mnqp.ru/gyn5/" rel="nofollow">http://mnqp.ru/gyn5/</a>…</div>
+					</li>
+
+<li>
+<div class="imm">Константин<br>
+							Отзыв о компании <a href="rejting-firm/planeta-okon.html#qcom243">“Планета окон”</a>
+							</div>
+							<div>Оконные блоки установлены под наклоном. Объяснение: - «У Вас стены не вертикально»<br>
+В оконных блоках…</div>
+					</li>
+
+<li>
+<div class="imm">Оксана<br>
+							Отзыв о компании <a href="rejting-firm/profit.html#qcom242">“Профит”</a>
+							</div>
+							<div>Заказывали установку пластиковой дверцы под окном, заказ приняли, пришел замерщик выполнил замеры. На…</div>
+					</li>
+
+<li>
+<div class="imm">Дмитрий<br>
+							Отзыв о компании <a href="rejting-firm/grand.html#qcom241">“Гранд”</a>
+							</div>
+							<div>Заказывал балконную дверь с окном,отвратительно сделали,дует из всех щелей.Звонил и приходил в течении…</div>
+					</li>
+
+<li>
+<div class="imm">Алена<br>
+							Отзыв о компании <a href="rejting-firm/biplan.html#qcom240">“Биплан”</a>
+							</div>
+							<div>Мне так "повезло" или всем так хамят по телефону?</div>
+					</li>
+
+<li>
+<div class="imm">Евгения<br>
+							Отзыв о компании <a href="rejting-firm/profstroj.html#qcom239">“Профстрой”</a>
+							</div>
+							<div>Цены приемлимые, но и качество соответствующее. Окна устанавливают после нескольких звонков клиентов,…</div>
+					</li>
+
+<li>
+<div class="imm">Алена<br>
+							Отзыв о компании <a href="rejting-firm/grand.html#qcom238">“Гранд”</a>
+							</div>
+							<div>Качественные окна по приемлемой цене. Адекватное обслуживание и вежливый сервис, ни от кого не слышала…</div>
+					</li>
+
+<li>
+<div class="imm">Ольга Калинина<br>
+							Отзыв о компании <a href="rejting-firm/tzsk.html#qcom237">“ТЗСК”</a>
+							</div>
+							<div>Я довольна работой компании ТЗСК. Обратилась туда по совету знакомых, они ставили окно на кухню года…</div>
+					</li>
+
+<li>
+<div class="imm">Алиса<br>
+							Отзыв о компании <a href="rejting-firm/profit.html#qcom236">“Профит”</a>
+							</div>
+							<div>Не прошло и полгода , а все швы между окном и подоконником потрескались. Монтажная пена разбухла и вытолкнула…</div>
+					</li>
+
+<li>
+<div class="imm">Антон Смолов<br>
+							Отзыв о компании <a href="rejting-firm/narodnyie-okna.html#qcom235">“Народные окна”</a>
+							</div>
+							<div>Я ставил 2 окна к себе в частный дом. Монтажники проделали хорошую работу, быстро и качественно поставили,…</div>
+					</li>
+
+<li>
+<div class="imm">Наталья Кутерева<br>
+							Отзыв о компании <a href="rejting-firm/niko.html#qcom234">“НИКО”</a>
+							</div>
+							<div>Отзыв о компании положительный. Довольна качеством окон и работой монтажников. Советую!</div>
+					</li>
+
+<li>
+<div class="imm">Наталья<br>
+							Отзыв о компании <a href="rejting-firm/tzsk.html#qcom233">“ТЗСК”</a>
+							</div>
+							<div>Поставила к себе в дом окно компании "ТЗСК"<br>
+Качеством довольна, не продувает, не протекают<br&#8230;< div="">
+					</br&#8230;<></div></li>
+
+<li>
+<div class="imm">Виктор<br>
+							Отзыв о компании <a href="rejting-firm/tzsk.html#qcom232">“ТЗСК”</a>
+							</div>
+							<div>Доволен как замерщиками, так и монтажниками, сделали всё быстро и качественно.<br>
+Качеством окон…</div>
+					</li>
+
+<li>
+<div class="imm">Владислав<br>
+							Отзыв о компании <a href="rejting-firm/tzsk.html#qcom231">“ТЗСК”</a>
+							</div>
+							<div>Я заказывал у ТЗСК 2 окна в частный дом. Замерщик приехал довольно быстро. Монтажники так же хорошо поставили…</div>
+					</li>
+
+<li>
+<div class="imm">Семен<br>
+							Отзыв о компании <a href="rejting-firm/tzsk.html#qcom230">“ТЗСК”</a>
+							</div>
+							<div>Добрый день. Я покупал окна в дом. Я сам занимаюсь строительством домов. Фирма хорошая, свои обязательства…</div>
+					</li>
+
+<li>
+<div class="imm">Анатолий<br>
+							Отзыв о компании <a href="rejting-firm/tzsk.html#qcom229">“ТЗСК”</a>
+							</div>
+							<div>Я заказал в компании "ТЗСК" окно к себе в  спальню.<br>
+В офисе продаж со мной поработали прекрасные…</div>
+					</li>
+
+<li>
+<div class="imm">Валентина Янкина<br>
+							Отзыв о компании <a href="rejting-firm/tzsk.html#qcom228">“ТЗСК”</a>
+							</div>
+							<div>Почему-то работают по полной оплате в день доставки окон, а не завершению работы, да и % предоплаты явно…</div>
+					</li>
+
+<li>
+<div class="imm">Валентина Янкина<br>
+							Отзыв о компании <a href="rejting-firm/tzsk.html#qcom227">“ТЗСК”</a>
+							</div>
+							<div>Нам очень не повезло. То изготовили окна не соответствующие размерам.Переделывали!А время идет ! Установили…</div>
+					</li>
+
+<li>
+<div class="imm">Татьяна<br>
+							Отзыв о компании <a href="rejting-firm/grand.html#qcom226">“Гранд”</a>
+							</div>
+							<div>Не рекомендую, договорились на установку 16 или 23 числа. В итоге 22 пришлось звонить самой и узнавать…</div>
+					</li>
+
+<li>
+<div class="imm">Олеся<br>
+							Отзыв о компании <a href="rejting-firm/tzsk.html#qcom225">“ТЗСК”</a>
+							</div>
+							<div>Благодарна компании за проделанную работу.<br>
+Все выполнили в срок и качественно, монтажники очень…</div>
+					</li>
+
+<li>
+<div class="imm">Кирилл<br>
+							Отзыв о компании <a href="rejting-firm/tzsk.html#qcom224">“ТЗСК”</a>
+							</div>
+							<div>Добрый день, Константин, мы очень стараемся оставить всех наших клиентов довольными.<br>
+Для этого…</div>
+					</li>
+
+<li>
+<div class="imm">Андрей<br>
+							Отзыв о компании <a href="rejting-firm/profit.html#qcom223">“Профит”</a>
+							</div>
+							<div>Пригласил замерщика для снятия размеров, оформления договора и внесения предоплаты. Утром следующего…</div>
+					</li>
+
+<li>
+<div class="imm">Константин<br>
+							Отзыв о компании <a href="rejting-firm/tzsk.html#qcom222">“ТЗСК”</a>
+							</div>
+							<div>Остался очень недоволен этой компанией. Не рекомендую</div>
+					</li>
+
+<li>
+<div class="imm">Коля<br>
+							Отзыв о компании <a href="rejting-firm/belyie-okna.html#qcom221">“Белые окна”</a>
+							</div>
+							<div>Доволен, что связался с этой конторой, качественные окна, привезли упакованные и в пленках, по итогу…</div>
+					</li>
+
+<li>
+<div class="imm">Александр <br>
+							Отзыв о компании <a href="rejting-firm/grand.html#qcom220">“Гранд”</a>
+							</div>
+							<div>Долго выбирал между фирмами, занимающимися установкой окон в нашей Туле, в итоге остановил выбор на компании…</div>
+					</li>
+
+<li>
+<div class="imm">Инна<br>
+							Отзыв о компании <a href="rejting-firm/grand.html#qcom219">“Гранд”</a>
+							</div>
+							<div>Хорошая, добропорядочная фирма. Ставила зимой и ушло от замера до установки – неделя. Очень оперативно,…</div>
+					</li>
+
+<li>
+<div class="imm">Зоя<br>
+							Отзыв о компании <a href="rejting-firm/belyie-okna.html#qcom218">“Белые окна”</a>
+							</div>
+							<div>Особая благодарность консультанту, именно она вела весь наш заказ от начала и до конца, помогала все…</div>
+					</li>
+
+<li>
+<div class="imm">Татьяна<br>
+							Отзыв о компании <a href="rejting-firm/tzsk.html#qcom217">“ТЗСК”</a>
+							</div>
+							<div>О доставке окон меня предупредили за час до их доставки. Я успела собраться и мне их точно в назначенное…</div>
+					</li>
+
+<li>
+<div class="imm">Татьяна<br>
+							Отзыв о компании <a href="rejting-firm/profit.html#qcom216">“Профит”</a>
+							</div>
+							<div>Люди,берегите свои нервы, деньги и время.Ни за что не обращайтесь в " Профит". Купилась на раскрученный…</div>
+					</li>
+
+<li>
+<div class="imm">Андрей Дмитриевич<br>
+							Отзыв о компании <a href="rejting-firm/grand.html#qcom215">“Гранд”</a>
+							</div>
+							<div>Заказывал пластиковые окна для замены в старом доме. В Гранде мне предложили более-менее адекватные цены…</div>
+					</li>
+
+<li>
+<div class="imm">Вероника<br>
+							Отзыв о компании <a href="rejting-firm/tzsk.html#qcom214">“ТЗСК”</a>
+							</div>
+							<div>По отзывам наших друзей выбрали эту компанию - проверенную временем, они уже давно на рынке. Брали у…</div>
+					</li>
+
+<li>
+<div class="imm">Ольга<br>
+							Отзыв о компании <a href="rejting-firm/belyie-okna.html#qcom213">“Белые окна”</a>
+							</div>
+							<div>Оцениваю на твердую 5. Заказали на прошлой неделе кухонное окно, в течение 10 минут девушка-менеджер…</div>
+					</li>
+
+<li>
+<div class="imm">Аня<br>
+							Отзыв о компании <a href="rejting-firm/grand.html#qcom212">“Гранд”</a>
+							</div>
+							<div>Обращаюсь к ним не первый раз – заказывала окна для своей квартиры, теперь для родительской. Каждый раз…</div>
+					</li>
+
+<li>
+<div class="imm">Ульяна Сошникова<br>
+							Отзыв о компании <a href="rejting-firm/tzsk.html#qcom211">“ТЗСК”</a>
+							</div>
+							<div>Хочу поделиться впечатлениями!Заказывали 21.04.2017г. два окна в компании ТЗСК на ул. Пролетарская 24.…</div>
+					</li>
+
+<li>
+<div class="imm">Политовы<br>
+							Отзыв о компании <a href="rejting-firm/tzsk.html#qcom210">“ТЗСК”</a>
+							</div>
+							<div>Мы долго выбирали, к кому обратиться по поводу замена окон. Сами понимаете, пенсионеры, долго откладывали,…</div>
+					</li>
+
+<li>
+<div class="imm">Анастасия Бугаева<br>
+							Отзыв о компании <a href="rejting-firm/grand.html#qcom209">“Гранд”</a>
+							</div>
+							<div>Хорошая компания, которая знает свою работу. Понравилось обслуживание по телефону, установщики аккуратные.…</div>
+					</li>
+
+<li>
+<div class="imm">Люба<br>
+							Отзыв о компании <a href="rejting-firm/tzsk.html#qcom208">“ТЗСК”</a>
+							</div>
+							<div>Могу сказать, что я не ошиблась в выборе. Сотрудники компании помогли подобрать подходящие для меня окна,…</div>
+					</li>
+
+<li>
+<div class="imm">Елена<br>
+							Отзыв о компании <a href="rejting-firm/profstroj.html#qcom207">“Профстрой”</a>
+							</div>
+							<div>Раньше не приходилось заниматься заменой окон. Компанию Профстрой Окна посоветовала свекровь, которая…</div>
+					</li>
+
+<li>
+<div class="imm">Андрей Витальевич<br>
+							Отзыв о компании <a href="rejting-firm/grand.html#qcom206">“Гранд”</a>
+							</div>
+							<div>Понравилась четкость и слаженность у сотрудников компании: если сказали позвонят завтра в два часа –…</div>
+					</li>
+
+<li>
+<div class="imm">Ольга<br>
+							Отзыв о компании <a href="rejting-firm/profstroj.html#qcom205">“Профстрой”</a>
+							</div>
+							<div>Хочу выразить благодарность за качественное остекление балкона. Консультант в офисе оказался очень знающим,…</div>
+					</li>
+
+<li>
+<div class="imm">Екатерина<br>
+							Отзыв о компании <a href="rejting-firm/profstroj.html#qcom204">“Профстрой”</a>
+							</div>
+							<div>Добрый день! Захотели поменять окна, обратились в компанию «Профстрой», менеджер все понятно объяснил…</div>
+					</li>
+
+<li>
+<div class="imm">Виктория<br>
+							Отзыв о компании <a href="rejting-firm/tzsk.html#qcom203">“ТЗСК”</a>
+							</div>
+							<div>Пластиковые окна были доставлены в срок и также установлены. Вроде ни в чем не обманули и все согласно…</div>
+					</li>
+
+<li>
+<div class="imm">Виктор<br>
+							Отзыв о компании <a href="rejting-firm/grand.html#qcom202">“Гранд”</a>
+							</div>
+							<div>Установили хорошо, не дует, почему про них плохо пишут, не понятно!</div>
+					</li>
+
+<li>
+<div class="imm">Анастасия<br>
+							Отзыв о компании <a href="rejting-firm/grand.html#qcom201">“Гранд”</a>
+							</div>
+							<div>Доставили даже на день раньше срока (нам было как раз на руку). Установили нормально, мусор вынесли на…</div>
+					</li>
+
+<li>
+<div class="imm">Андрей<br>
+							Отзыв о компании <a href="rejting-firm/tzsk.html#qcom200">“ТЗСК”</a>
+							</div>
+							<div>Подсобрал денег на новые окна, но честно говоря не знал в какую фирму обратиться. Смотрел в сети разную…</div>
+					</li>
+
+<li>
+<div class="imm">Азарова Нина Васильевна<br>
+							Отзыв о компании <a href="rejting-firm/narodnyie-okna.html#qcom199">“Народные окна”</a>
+							</div>
+							<div>Я, Азарова Нина Васильевна, очень благодарна фирме за отличное обслуживание, качественное изготовление…</div>
+					</li>
+
+<li>
+<div class="imm">Антонина<br>
+							Отзыв о компании <a href="rejting-firm/grand.html#qcom198">“Гранд”</a>
+							</div>
+							<div>Работники хорошие. Делали все быстро, даже на перекур не выходили.<br>
+Окнам нам с мужем понравились,…</div>
+					</li>
+
+<li>
+<div class="imm">Наталья Чикинева<br>
+							Отзыв о компании <a href="rejting-firm/tzsk.html#qcom197">“ТЗСК”</a>
+							</div>
+							<div>Мы поставили у себя окна Rehau через ТЗСК. Менеджер компании рассказывал нам о многокамерной системе,…</div>
+					</li>
+
+<li>
+<div class="imm">Алла Анатольевна<br>
+							Отзыв о компании <a href="rejting-firm/narodnyie-okna.html#qcom196">“Народные окна”</a>
+							</div>
+							<div>Установила новые пластиковые окна в компании Народные окна. Привлекло большое количество акций и специальных…</div>
+					</li>
+
+<li>
+<div class="imm">Виктор Петрович<br>
+							Отзыв о компании <a href="rejting-firm/grand.html#qcom195">“Гранд”</a>
+							</div>
+							<div>В доме у отца решил менять окна. Он долго сопротивлялся, говорил, что все пластиковые окна сквозят. К…</div>
+					</li>
+
+<li>
+<div class="imm">Рита<br>
+							Отзыв о компании <a href="rejting-firm/dostupnyie-okna.html#qcom194">“Доступные окна”</a>
+							</div>
+							<div>В компании заказывала металлопластиковые окна на дачу, мне понадобилось 4 окна. После общения с менеджером,…</div>
+					</li>
+
+<li>
+<div class="imm">Никита<br>
+							Отзыв о компании <a href="rejting-firm/narodnyie-okna.html#qcom193">“Народные окна”</a>
+							</div>
+							<div>Заказывал у вас окна на балкон и кухню. Работники безупречно справились со своей задачей. Быстро разобрались…</div>
+					</li>
+
+<li>
+<div class="imm">Катерина<br>
+							Отзыв о компании <a href="rejting-firm/niko.html#qcom192">“НИКО”</a>
+							</div>
+							<div>Мы заказывали окна в Нико, хочу оставить хороший отзыв. Все было сделано просто отлично. Все профессионально.…</div>
+					</li>
+
+<li>
+<div class="imm">Марина<br>
+							Отзыв о компании <a href="rejting-firm/grand.html#qcom191">“Гранд”</a>
+							</div>
+							<div>Спасибо девушке-менеджеру из компании Гранд! Она рассказала мне про цены на окна и помогла подобрать…</div>
+					</li>
+
+<li>
+<div class="imm">Юлия<br>
+							Отзыв о компании <a href="rejting-firm/narodnyie-okna.html#qcom190">“Народные окна”</a>
+							</div>
+							<div>В "Народных окнах" прежде всего, понравилось, что расчет и обработка вопросов/пожеланий осуществляется…</div>
+					</li>
+
+<li>
+<div class="imm">Наталья<br>
+							Отзыв о компании <a href="rejting-firm/belyie-okna.html#qcom184">“Белые окна”</a>
+							</div>
+							<div>Окнами до сих пор довольны?Нареканий в пользовании нет?</div>
+					</li>
+
+<li>
+<div class="imm">Юрий<br>
+							Отзыв о компании <a href="rejting-firm/grand.html#qcom180">“Гранд”</a>
+							</div>
+							<div>Федор,я с вами не согласен. Ставил в новостройке окна,менял пластик на пластик.Когда вскрыли старые окна…</div>
+					</li>
+
+<li>
+<div class="imm">Ирина<br>
+							Отзыв о компании <a href="rejting-firm/grand.html#qcom179">“Гранд”</a>
+							</div>
+							<div>Заказывала окна в компании "Гранд" во всю квартиру.Меня все устроило:в офисе работают очень вежливые…</div>
+					</li>
+
+<li>
+<div class="imm">Федор<br>
+							Отзыв о компании <a href="rejting-firm/grand.html#qcom177">“Гранд”</a>
+							</div>
+							<div>Эта фирма устанавливала мне окно в спальне и балконную дверь с окном на кухне. С тех пор я и мучаюсь.…</div>
+					</li>
+
+<li>
+<div class="imm">Маргарита<br>
+							Отзыв о компании <a href="rejting-firm/niko.html#qcom176">“НИКО”</a>
+							</div>
+							<div>Замечательная компания! Очень слаженная работа! Сделали все быстро и качественно! Молодцы! Огромных вам…</div>
+					</li>
+
+<li>
+<div class="imm">Тамара<br>
+							Отзыв о компании <a href="rejting-firm/profstroj.html#qcom175">“Профстрой”</a>
+							</div>
+							<div>Заказали окна, изготовили вовремя, сюрпризы ожидали нас дальше, установил окна один молодой человек,…</div>
+					</li>
+
+<li>
+<div class="imm">Людмила<br>
+							Отзыв о компании <a href="rejting-firm/tzsk.html#qcom174">“ТЗСК”</a>
+							</div>
+							<div>Не так давно заказали и установили окна от этой фирмы, хочу поделиться своими небольшими впечатлениями.<br&#8230;< div="">
+					</br&#8230;<></div></li>
+
+<li>
+<div class="imm">Михаил<br>
+							Отзыв о компании <a href="rejting-firm/profit.html#qcom172">“Профит”</a>
+							</div>
+							<div>Ставил летом окна в компании Профит, сейчас мучаюсь, зимой все мерзнет, окна потеют. Может просто не…</div>
+					</li>
+
+<li>
+<div class="imm">Алена<br>
+							Отзыв о компании <a href="rejting-firm/profit.html#qcom171">“Профит”</a>
+							</div>
+							<div>Заказала окно в компании "Профите". Окно установили с большими недочетами: кривые откосы, подоконник…</div>
+					</li>
+
+<li>
+<div class="imm">Кирилл<br>
+							Отзыв о компании <a href="rejting-firm/belyie-okna.html#qcom170">“Белые окна”</a>
+							</div>
+							<div>После того, как я переехал в новый район, первое, что стало наиболее сильно волновать меня при приближении…</div>
+					</li>
+
+<li>
+<div class="imm">Ирина<br>
+							Отзыв о компании <a href="rejting-firm/niko.html#qcom169">“НИКО”</a>
+							</div>
+							<div>Балкон застеклили в кратчайшие сроки (2 дня). Сделано на совесть. Установщики Михаил и Вячеслав работали…</div>
+					</li>
+
+<li>
+<div class="imm">Евгения<br>
+							Отзыв о компании <a href="rejting-firm/profstroj.html#qcom168">“Профстрой”</a>
+							</div>
+							<div>Кому наплевать на себя, свои нервы и свой дом Вам сюда! Не пожалеете.<br>
+В июле 2012 г. связалась…</div>
+					</li>
+
+<li>
+<div class="imm">Анастасия<br>
+							Отзыв о компании <a href="rejting-firm/grand.html#qcom167">“Гранд”</a>
+							</div>
+							<div>По существу:<br>
+1) Окна поставили так, что они скрипят и задевают за рамы. Ждать как минимум 10 дней,…</div>
+					</li>
+
+<li>
+<div class="imm">Иван<br>
+							Отзыв о компании <a href="rejting-firm/profit.html#qcom165">“Профит”</a>
+							</div>
+							<div>30 мая монтажники установили в моей квартире окно и балконный блок. На окнах царапины, следы ржавчины,…</div>
+					</li>
+
+<li>
+<div class="imm">Марат<br>
+							Отзыв о компании <a href="rejting-firm/belyie-okna.html#qcom164">“Белые окна”</a>
+							</div>
+							<div>Выражаю огромную благодарность"Белым окнам"!Заказывал у них остекление коттеджа. Всё на высшем уровне…</div>
+					</li>
+
+<li>
+<div class="imm">Дарья<br>
+							Отзыв о компании <a href="rejting-firm/profstroj.html#qcom163">“Профстрой”</a>
+							</div>
+							<div>Обратившись в эту фирму 23.03.16 г., не ожидала, что придется столкнуться с проблемой. Изначально менеджер…</div>
+					</li>
+
+<li>
+<div class="imm">Оксана<br>
+							Отзыв о компании <a href="rejting-firm/grand.html#qcom162">“Гранд”</a>
+							</div>
+							<div>Фирма Гранд поставила нам 5 окон. Красиво поют только до момента получения от Вас денег, далее Вам придеться…</div>
+					</li>
+
+<li>
+<div class="imm">Лариса<br>
+							Отзыв о компании <a href="rejting-firm/profit.html#qcom161">“Профит”</a>
+							</div>
+							<div>19 сентября 2015 монтажной бригадой были установлены 2 балконных блока. Дверь балконного блока усиленной…</div>
+					</li>
+
+<li>
+<div class="imm">Карина<br>
+							Отзыв о компании <a href="rejting-firm/narodnyie-okna.html#qcom160">“Народные окна”</a>
+							</div>
+							<div>Хочу выразить благодарность компании "Народные окна". Приветливые менеджеры, которые помогли подобрать…</div>
+					</li>
+
+<li>
+<div class="imm">Роман<br>
+							Отзыв о компании <a href="rejting-firm/narodnyie-okna.html#qcom159">“Народные окна”</a>
+							</div>
+							<div>В компанию «Народные окна» обратились по рекомендации друзей. Они расхвалили нам эту компанию, сказали,…</div>
+					</li>
+
+<li>
+<div class="imm">Наталья<br>
+							Отзыв о компании <a href="rejting-firm/profit.html#qcom158">“Профит”</a>
+							</div>
+							<div>Установил окна этой фирмы две зимы назад. Балконная дверь закрывается с трудом. А главное очень холодно,…</div>
+					</li>
+
+<li>
+<div class="imm">Яна<br>
+							Отзыв о компании <a href="rejting-firm/profstroj.html#qcom157">“Профстрой”</a>
+							</div>
+							<div>С момента заказа и предоплаты окон прошло более 3-х недель! До выезда замерщика обещанный срок выполнения…</div>
+					</li>
+
+<li>
+<div class="imm">Аркадий<br>
+							Отзыв о компании <a href="rejting-firm/profstroj.html#qcom156">“Профстрой”</a>
+							</div>
+							<div>Очень не порядочная фирма. Окно мне делали вместо двух недель ровно месяц. На следующий день после доставки…</div>
+					</li>
+
+<li>
+<div class="imm">Юрий<br>
+							Отзыв о компании <a href="rejting-firm/tzsk.html#qcom155">“ТЗСК”</a>
+							</div>
+							<div>Хочу оставить свой развернутый положительный отзыв о сотрудничестве с оконной компанией «ТЗСК». Я обратился…</div>
+					</li>
+
+<li>
+<div class="imm">Елена Павловна<br>
+							Отзыв о компании <a href="rejting-firm/niko.html#qcom154">“НИКО”</a>
+							</div>
+							<div>Ранее заказывали балконный блок и лоджию, нам очень все понравилось писали отзыв. В этот раз заказали…</div>
+					</li>
+
+<li>
+<div class="imm">Евгений<br>
+							Отзыв о компании <a href="rejting-firm/tzsk.html#qcom153">“ТЗСК”</a>
+							</div>
+							<div>Хорошая организация. Потратил день на выбор фирмы, где заказать окна. Рассматривал такие организации…</div>
+					</li>
+
+<li>
+<div class="imm">Анна Морозова<br>
+							Отзыв о компании <a href="rejting-firm/tzsk.html#qcom152">“ТЗСК”</a>
+							</div>
+							<div>К выбору компании, которой можно доверить свои окна, я отнеслась довольно щепетильно. Ведь оконных фирм…</div>
+					</li>
+
+<li>
+<div class="imm">Татьяна<br>
+							Отзыв о компании <a href="rejting-firm/niko.html#qcom151">“НИКО”</a>
+							</div>
+							<div>Второй раз обращаюсь в Нико окна. Дважды довольна. Все во время, качественно. Огромная благодарность…</div>
+					</li>
+
+<li>
+<div class="imm">Валерия<br>
+							Отзыв о компании <a href="rejting-firm/profstroj.html#qcom150">“Профстрой”</a>
+							</div>
+							<div>С компанией "Профстрой" лучше не связываться, условия договора не выполняются, отношения с заказчиками…</div>
+					</li>
+
+<li>
+<div class="imm">Евгения <br>
+							Отзыв о компании <a href="rejting-firm/profstroj.html#qcom149">“Профстрой”</a>
+							</div>
+							<div>Заказывала окна сразу после новогодних праздников. До сих пор никто не соизволил даже позвонить, трубку…</div>
+					</li>
+
+<li>
+<div class="imm">Сергей Шилов<br>
+							Отзыв о компании <a href="rejting-firm/profstroj.html#qcom148">“Профстрой”</a>
+							</div>
+							<div>Сначала все было хорошо, качественные окна, вежливый персонал, легко дозвониться и все было понятно.…</div>
+					</li>
+
+<li>
+<div class="imm">Елизавета<br>
+							Отзыв о компании <a href="rejting-firm/profstroj.html#qcom147">“Профстрой”</a>
+							</div>
+							<div>Хотели заказать окна в данной конторе. Но всё впечатление испортил говно-замерщик  который сначала не…</div>
+					</li>
+
+<li>
+<div class="imm">Баринов Е.<br>
+							Отзыв о компании <a href="rejting-firm/tzsk.html#qcom146">“ТЗСК”</a>
+							</div>
+							<div>Прекрасно, когда ты решил поменять окна в квартире и тебе достаточно позвонить по телефону. Один звонок…</div>
+					</li>
+
+<li>
+<div class="imm">Дмитрий<br>
+							Отзыв о компании <a href="rejting-firm/niko.html#qcom145">“НИКО”</a>
+							</div>
+							<div>После пяти лет жесткой экономии, наконец-то купили долгожданную двушку в новостройке. В квартире все…</div>
+					</li>
+
+<li>
+<div class="imm">Дмитрий<br>
+							Отзыв о компании <a href="rejting-firm/profstroj.html#qcom144">“Профстрой”</a>
+							</div>
+							<div>Решили сделать лоджию и отделку внутри. Много читал интернет. Нашел рядышком со мной Фирму Профстрой.…</div>
+					</li>
+</ul>
+</div>
+	</div>
+	<br class="clear"/>
+	</div>
+</div>
+<div class="wr_footer">
+	<div class="footer">
+	<div class="f_block">
+		<ul>
+			<li>
+				Copyright 2015 © okna71.ru<br/>
+				Независимый рейтинг фирм по производству 
+				и продаже пластиковых окон в Туле.
+				<div class="counters">
+					<!--<img src="./uplfile/c1.png">
+					<img src="./uplfile/c2.png">-->
+				</div>
+			</li>
+			<li class="statistics">
+				<div>
+					<b>Статистика</b>
+				</div>
+				<div class="list_s">
+				Фирмы: <span class="s_number">17</span><br><br>
+				Отзывы: <span class="s_number">211</span><br><br>
+				Статьи: <span class="s_number">26</span><br><br>
+				</div>
+			</li>
+
+			<li>
+				<ul class="f_m1">
+						<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t14.4;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: показано число просмотров за 24"+
+" часа, посетителей за 24 часа и за сегодня' "+
+"border='0' width='88' height='31'><\/a>")
+//--></script><!--/LiveInternet-->
+<br>
+<!-- begin of Top100 code -->
+<script id="top100Counter" type="text/javascript" src="http://counter.rambler.ru/top100.jcn?2937778"></script>
+<noscript>
+<a href="http://top100.rambler.ru/navi/2937778/">
+<img src="http://counter.rambler.ru/top100.cnt?2937778" alt="Rambler's Top100" border="0" />
+</a>
+</noscript>
+<!-- end of Top100 code -->
+						<!--<ul class="f_m1"><li class="first"><a href="index/" title="" >Новости</a></li>
+<li class="active"><a href="akczii.html" title="" >Акции компаний</a></li>
+<li><a href="rejting-firm/" title="" >Рейтинг фирм Тулы</a></li>
+<li><a href="otzyivyi-klientov.html" title="" >Отзывы клиентов</a></li>
+<li><a href="profilnyie-sistemyi/" title="" >Профили</a></li>
+<li><a href="stati/" title="" >Статьи</a></li>
+<li class="last"><a href="about.html" title="" >О сайте</a></li>
+</ul>
+						<li><a href="akczii.html">Акции на окна</a></li>
+<li><a href="index/">Новости</a></li>-->
+
+					</ul>
+
+			</li>
+		</ul>
+	</div>
+	</div>
+</div>
+
+</body>
+</html>
